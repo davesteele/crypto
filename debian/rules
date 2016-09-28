@@ -2,3 +2,8 @@
 
 %:
 	dh $@ --buildsystem=golang --with=golang
+
+
+override_dh_auto_build:
+	dh_auto_build
+	cp -r testing/cases obj-*/src/github.com/jacobsa/crypto/testing/
