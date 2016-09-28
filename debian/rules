@@ -9,3 +9,4 @@ override_dh_auto_build:
 	rm -rf obj-*/src/github.com/jacobsa/crypto/testing/gencases
 	dh_auto_build
 	cp -r testing/cases obj-*/src/github.com/jacobsa/crypto/testing/
+	rm -f obj-*/bin/gencases

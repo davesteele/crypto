@@ -2,16 +2,16 @@ Source: golang-github-jacobsa-crypto
 Section: devel
 Priority: extra
 Maintainer: Debian Go Packaging Team <pkg-go-maintainers@lists.alioth.debian.org>
-Uploaders: David Steele <David Steele@desktop.localhost>
+Uploaders: David Steele <steele@debian.org>
 Build-Depends: debhelper (>= 9),
                dh-golang,
                golang-go,
                golang-github-jacobsa-oglematchers-dev,
                golang-github-jacobsa-ogletest-dev
-Standards-Version: 3.9.6
+Standards-Version: 3.9.8
 Homepage: https://github.com/jacobsa/crypto
 Vcs-Browser: https://anonscm.debian.org/cgit/pkg-go/packages/golang-github-jacobsa-crypto.git
-Vcs-Git: git://anonscm.debian.org/pkg-go/packages/golang-github-jacobsa-crypto.git
+Vcs-Git: git://anonscm.debian.org/pkg-go/packages/golang-github-jacobsa-crypto.git -b debian
 XS-Go-Import-Path: github.com/jacobsa/crypto
 
 Package: golang-github-jacobsa-crypto-dev
@@ -25,6 +25,6 @@ Description: Some Go cryptography routines that are not included in the Go stand
  This repository contains Go packages related to cryptographic standards
  that are not included in the Go standard library. These include:
  • SIV mode (http://go.pkgdoc.org/github.com/jacobsa/crypto/siv),
- which provides deterministic encryption with authentication.• CMAC
- (http://go.pkgdoc.org/github.com/jacobsa/crypto/cmac), a message
- authentication system used by SIV mode.
+  which provides deterministic encryption with authentication.
+ • CMAC (http://go.pkgdoc.org/github.com/jacobsa/crypto/cmac),
+  a message authentication system used by SIV mode.
