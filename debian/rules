@@ -5,5 +5,7 @@
 
 
 override_dh_auto_build:
+	# the aes_locl.h file in this directory is OpenSSL licensed
+	rm -rf obj-*/src/github.com/jacobsa/crypto/testing/gencases
 	dh_auto_build
 	cp -r testing/cases obj-*/src/github.com/jacobsa/crypto/testing/

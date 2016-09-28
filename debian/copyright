@@ -1,13 +1,19 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: crypto
 Source: https://github.com/jacobsa/crypto
+Files-Excluded: testing/gencases/aes_locl.h
 
 Files: *
 Copyright: 2012 Aaron Jacobs
 License: Apache-2.0
 
+Files: testing/gencases/reference_siv.go
+       testing/gencases/siv.h
+Copyright: The Industrial Lounge, 2007
+License: Apache-2.0
+
 Files: debian/*
-Copyright: 2016 David Steele <David Steele@desktop.localhost>
+Copyright: 2016 David Steele <steele@debian.org>
 License: Apache-2.0
 Comment: Debian packaging is licensed under the same terms as upstream
 
