@@ -1,5 +1,5 @@
 golang-github-jacobsa-crypto (0.0~git20160410.0.42daa9d-1) UNRELEASED; urgency=low
 
-  * Initial release (Closes: TODO)
+  * Initial release (Closes: #839395)
 
  -- David Steele <steele@debian.org>  Tue, 27 Sep 2016 20:38:19 -0400
