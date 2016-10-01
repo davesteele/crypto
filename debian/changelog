@@ -1,5 +1,5 @@
-golang-github-jacobsa-crypto (0.0~git20160410.0.42daa9d-1) UNRELEASED; urgency=low
+golang-github-jacobsa-crypto (0.0~git20160410.0.42daa9d-1) unstable; urgency=low
 
   * Initial release (Closes: #839395)
 
- -- David Steele <steele@debian.org>  Tue, 27 Sep 2016 20:38:19 -0400
+ -- David Steele <steele@debian.org>  Sat, 01 Oct 2016 11:02:13 -0400
