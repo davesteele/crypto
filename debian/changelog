@@ -1,4 +1,12 @@
-golang-github-jacobsa-crypto (0.0~git20160410.0.42daa9d-1) unstable; urgency=low
+golang-github-jacobsa-crypto (0.0~git20160410.0.42daa9d-2) unstable; urgency=medium
+
+  * Add watch file to create the source tar from a git commit tag.
+    - Use uscan to repack the tar with a problematic file removed.
+  * Initial release (Closes: #839395)
+
+ -- David Steele <steele@debian.org>  Wed, 12 Oct 2016 22:08:39 -0400
+
+golang-github-jacobsa-crypto (0.0~git20160410.0.42daa9d-1) UNRELEASED; urgency=low
 
   * Initial release (Closes: #839395)
 
