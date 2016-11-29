@@ -3,4 +3,4 @@ version=3
 
 opts=mode=git,dversionmangle=s/~/_/,uversionmangle=s/_git/~git/ \
 https://anonscm.debian.org/cgit/pkg-go/packages/golang-github-jacobsa-crypto.git \
-refs/tags/master/(.*) debian uupdate
+refs/tags/master/(.*) debian
