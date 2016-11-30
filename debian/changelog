@@ -1,11 +1,13 @@
-golang-github-jacobsa-crypto (0.0~git20161111.0.293ce0c-1) UNRELEASED; urgency=medium
+golang-github-jacobsa-crypto (0.0~git20161111.0.293ce0c-1) unstable; urgency=medium
 
   * Fix "hash_64bit.go misses ppc64(el)" - Upstream fix to add supported
     architectures. (Closes: #843787)
   * Implement get-orig-source.
   * Update gbp.conf - deprecate pristine-tar.
+  * Add Debci testing.
+  * gbp - replace pristine tar with get-orig-source.
 
- -- David Steele <steele@debian.org>  Mon, 28 Nov 2016 19:48:54 -0500
+ -- David Steele <steele@debian.org>  Tue, 29 Nov 2016 19:56:24 -0500
 
 golang-github-jacobsa-crypto (0.0~git20160410.0.42daa9d-2) unstable; urgency=medium
 
