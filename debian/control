@@ -19,7 +19,6 @@ Package: golang-github-jacobsa-crypto-dev
 Architecture: all
 Depends: ${shlibs:Depends},
          ${misc:Depends},
-         golang-any,
          golang-github-jacobsa-oglematchers-dev,
          golang-github-jacobsa-ogletest-dev
 Description: Some Go cryptography routines that are not included in the Go standard library.
