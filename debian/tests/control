@@ -1,2 +1,5 @@
 Test-Command: go test -v testing
-Depends: @, @builddeps@
+#Depends: @, @builddeps@
+
+Test-Command: GOPATH=/usr/share/gocode go test -v -p 1 github.com/jacobsa/crypto/cmac github.com/jacobsa/crypto/common github.com/jacobsa/crypto/siv github.com/jacobsa/crypto/testing 2> /dev/null
+#Depends: @, @builddeps@
