@@ -3,7 +3,7 @@
 PKD = $(word 1,$(abspath $(dir $(MAKEFILE_LIST))))
 PKG = $(shell dpkg-parsechangelog -l$(PKD)/changelog --show-field=Source)
 
-DEBIAN_VERSION = $(shell (dpkg-parsechangelog -l$(PKD)/changelog | grep Version | sed 's/Version..//' | sed 's/-.\+//'))
+DEBIAN_VERSION = $(shell (dpkg-parsechangelog -l$(PKD)/changelog | grep Version | sed 's/Version..//' | sed 's/-.\+//' | sed 's/\+dfsg1//'))
 PRODUCT_VERSION = $(shell (grep "version=" setup.py | sed "s/.\+'\(.\+\)'.\+/\1/"))
 VER ?= $(DEBIAN_VERSION)
 
@@ -25,6 +25,7 @@ get-orig-source:  $(info I: $(PKG)_$(VER))
 	@echo "# Downloading..."
 	uscan --noconf --verbose --rename --destdir=. --check-dirname-level=0 --force-download --download-version $(VER) $(PKD)
 	mv $(PKD)/../$(PKG)_$(VER).orig.tar.xz $(CURDIR) || true
+	mv $(PKD)/../$(PKG)_$(VER)+dfsg1.orig.tar.xz $(CURDIR)  || true
 	# some notes on repacking the tar for gbp
 	#mv $(PKG)_$(VER).orig.tar.xz in-$(PKG)_$(VER).orig.tar.xz
 	#mk-origtargz --copy --package $(PKG) --version $(VER) --copyright-file $(PKD)/copyright in-$(PKG)_$(VER).orig.tar.xz
