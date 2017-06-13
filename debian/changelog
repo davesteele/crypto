@@ -1,6 +1,7 @@
 golang-github-jacobsa-crypto (0.0~git20161111.0.293ce0c-4) UNRELEASED; urgency=medium
 
-  * 
+  * Fix watch file version compare (Closes: 847368).
+  * Add xorBlock build defs for more architectures.
 
  -- David Steele <steele@debian.org>  Mon, 12 Jun 2017 18:58:44 -0400
 

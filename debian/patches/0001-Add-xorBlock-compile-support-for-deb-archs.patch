@@ -1,0 +1,35 @@
+From: David Steele <steele@debian.org>
+Date: Mon, 12 Jun 2017 18:57:26 -0400
+Subject: Add xorBlock compile support for deb archs
+
+---
+ cmac/hash_32bit.go | 2 +-
+ cmac/hash_64bit.go | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/cmac/hash_32bit.go b/cmac/hash_32bit.go
+index 7d51437..034972c 100644
+--- a/cmac/hash_32bit.go
++++ b/cmac/hash_32bit.go
+@@ -13,7 +13,7 @@
+ // See the License for the specific language governing permissions and
+ // limitations under the License.
+ 
+-// +build 386 arm,!arm64
++// +build 386 arm,!arm64, mips, mipsel, !mips64el, s390x
+ 
+ package cmac
+ 
+diff --git a/cmac/hash_64bit.go b/cmac/hash_64bit.go
+index fe31eda..d9b29f5 100644
+--- a/cmac/hash_64bit.go
++++ b/cmac/hash_64bit.go
+@@ -13,7 +13,7 @@
+ // See the License for the specific language governing permissions and
+ // limitations under the License.
+ 
+-// +build amd64 arm64 ppc64 ppc64le s390x mips64 mips64le
++// +build amd64 arm64 ppc64 ppc64le ppc64el mips64 mips64le mips64el
+ 
+ // This code assumes that it's safe to perform unaligned word-sized loads. This is safe on:
+ //  - arm64 per http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.den0024a/ch05s01s02.html
